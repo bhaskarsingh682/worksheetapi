@@ -4,12 +4,11 @@ module.exports = model;
 
 function model(sequelize) {
     const attributes = {
-        firstName: { type: DataTypes.STRING, allowNull: false },
-        lastName: { type: DataTypes.STRING, allowNull: false },
-       
+        userid: { type: DataTypes.STRING, allowNull: false },
+        words: { type: DataTypes.JSON, allowNull: false },
+   
     };
 
-   
 
     return sequelize.define('words', attributes);
 }
